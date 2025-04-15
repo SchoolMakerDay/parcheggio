@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titolo</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://www.schoolmakerday.it/wp-content/uploads/2018/01/School-Maker-Day-300x75.png">
+        </div>
+    </div>
+
+    <div class="mf">
+        <div class="main">
+            <div class="altezzaFoto">
+                <div class="foto">
+                    <img src="parcheggio.png">
+                    
+                    <div class="parcheggiLiberi">
+                        <img class="retroDisplay" src="display7Segmenti/null.png">
+                        <img class="display" src="display7Segmenti/0.png">
+                    </div>
+
+                    <div class="servoEntrata" id="entrata" onclick="rabbitsToggle('CSrvEnt')"></div>
+                    <div class="servoUscita" id="uscita" onclick="rabbitsToggle('CSrvUsc')"></div>
+                    <div class="lampioni" id="lampioni" onclick="rabbitsToggle('CLmp')"></div>
+                </div>
+            </div>
+        </div>
+    
+        <footer class="footer">
+            <div class="autori">
+                <h4>PROFESSORI</h4>
+                <ul class="professori">
+                    <li>Francesco Pizzuti</li>
+                </ul>
+
+                <h4>STUDENTI</h4>
+                <ul class="studenti">
+                    <li>Kevin De luca</li>
+                    <li>Luca Galletti</li>
+                    <li>Andrè Buonincontro</li>
+                    <li>Stefano Gatto</li>
+                </ul>                
+                
+                <ul class="studenti">
+                    <li>Fabio Barbieri</li>
+                    <li>Andrea Donati</li>
+                    <li>Matias Lenzi</li>
+                </ul>
+
+                <h4><a href="https://github.com/SchoolMakerDay/rabbits">RABBITS</a></h4>
+                <ul>
+                    <li>Giovanni Ragno</li>
+                    <li>Duilio Peroni</li>
+                </ul>
+            </div>
+
+            <!-- PULSANTI DI DEBUG, RENDERLI COMMENTI ALLA PRESENTAZIONE -->
+            <button onclick="rabbitsDichiaraTutteLeKey()">Dichiara le keys</button>
+            <button onclick="rabbitsToggle('ELmp')">Enable lampioni</button>
+            <button onclick="rabbitsToggle('ESrvEnt')">Enable Servo Entrata</button>            
+            <button onclick="rabbitsToggle('ESrvUsc')">Enable Servo Uscita</button>
+        </footer>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
